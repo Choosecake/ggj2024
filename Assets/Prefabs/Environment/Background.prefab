@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &386621757280432156
+--- !u!1 &3331996375091406865
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 386621757280432225}
-  - component: {fileID: 386621757280432158}
-  - component: {fileID: 386621757280432159}
-  - component: {fileID: 5253019972017247693}
+  - component: {fileID: 3331996375091406868}
+  - component: {fileID: 3331996375091406871}
+  - component: {fileID: 3331996375091406870}
+  - component: {fileID: 3331996375091406869}
+  - component: {fileID: 3331996375091406874}
   m_Layer: 0
-  m_Name: ShootingStar1
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &386621757280432225
+--- !u!4 &3331996375091406868
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386621757280432156}
+  m_GameObject: {fileID: 3331996375091406865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.78, y: 6.1, z: 10.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 25.55}
+  m_LocalScale: {x: 6.1567197, y: 5.0957074, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &386621757280432158
+--- !u!212 &3331996375091406871
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386621757280432156}
+  m_GameObject: {fileID: 3331996375091406865}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 987ecf98cbe8617478882bd8f845b71c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2418048559b9e1f48850ac3d915ed38b, type: 3}
+  m_Color: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,17 +87,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &386621757280432159
+--- !u!95 &3331996375091406870
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386621757280432156}
+  m_GameObject: {fileID: 3331996375091406865}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 83ae22ee7692654428d78bb6ce822d6c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1e5b01dce55a9b44cb199069a1adebe8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -107,16 +108,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5253019972017247693
+--- !u!114 &3331996375091406869
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386621757280432156}
+  m_GameObject: {fileID: 3331996375091406865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5684ca93ab244df40809607aaf9a898d, type: 3}
+  m_Script: {fileID: 11500000, guid: 194b57e610dcb1644862d4bb57fd95b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0
+  shootingStar: {fileID: 386621757280432156, guid: 4d262a3e165ad97458d8fea7d6097780, type: 3}
+--- !u!114 &3331996375091406874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331996375091406865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48af88ff92233684489a352250b5c8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensidadeMovimento: 0.25
+  velocidadeMovimento: 0.25

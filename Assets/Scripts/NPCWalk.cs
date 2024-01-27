@@ -1,105 +1,95 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class NPCWalk : MonoBehaviour
 {
     [SerializeField] private GameObject _planet;
-    [SerializeField] private GameObject _moon;
+    [SerializeField] private GameObject _moonRaycast;
     [SerializeField] private float _speed;
     [SerializeField] private float _turnSpeed;
-    private VillagerState currentState = VillagerState.Walking;
+    public NPCWalkingState currentState = NPCWalkingState.Walking;
 
-    public enum VillagerState
+    public enum NPCWalkingState
     {
         Walking,
         StopWalking,
         TurnRight,
         TurnLeft,
         TurnBackwards,
-        FollowMoon
     }
 
     void Update()
     {
-        if (this.CompareTag("VampClown"))
-        {
-            FollowMoon();
-        }
-
         switch (currentState)
         {
-            case VillagerState.Walking:
+            case NPCWalkingState.Walking:
                 Walk();
                 break;
-            case VillagerState.StopWalking:
-                // Stop walking
+            case NPCWalkingState.StopWalking:
+                StopWalking();
                 break;
-            case VillagerState.TurnRight:
+            case NPCWalkingState.TurnRight:
                 TurnRight();
                 break;
-            case VillagerState.TurnLeft:
+            case NPCWalkingState.TurnLeft:
                 TurnLeft();
                 break;
-            case VillagerState.TurnBackwards:
+            case NPCWalkingState.TurnBackwards:
                 TurnBackwards();
                 break;
         }
     }
     private void Walk()
     {
-        Vector3 centerDirection = _planet.transform.position - transform.position;
-        centerDirection.Normalize();
-        transform.rotation = Quaternion.FromToRotation(transform.up, centerDirection) * transform.rotation;
+        Vector3 direction = _planet.transform.position - transform.position;
+        direction.Normalize();
+        transform.rotation = Quaternion.FromToRotation(transform.up, direction) * transform.rotation;
         transform.Translate(Vector3.forward * _speed * Time.deltaTime);
 
         if (Random.Range(0, 1000) == 0)
         {
             if (Random.Range(0, 2) == 0)
             {
-                ChangeState(VillagerState.TurnLeft);
+                ChangeState(NPCWalkingState.TurnLeft);
             }
             else if (Random.Range(0, 2) == 1)
             {
-                ChangeState(VillagerState.TurnRight);
+                ChangeState(NPCWalkingState.TurnRight);
             }
             else if (Random.Range(0, 2) == 2)
             {
-                ChangeState(VillagerState.TurnBackwards);
+                ChangeState(NPCWalkingState.TurnBackwards);
             }
         }
+    }
+
+    private void StopWalking()
+    {
+
     }
 
     private void TurnRight()
     {
         transform.Rotate(Vector3.up, _turnSpeed);
-        ChangeState(VillagerState.Walking);
+        ChangeState(NPCWalkingState.Walking);
     }
 
     private void TurnLeft()
     {
         transform.Rotate(Vector3.up, -_turnSpeed);
-        ChangeState(VillagerState.Walking);
+        ChangeState(NPCWalkingState.Walking);
     }
 
     private void TurnBackwards()
     {
         transform.Rotate(Vector3.up, 180f);
-        ChangeState(VillagerState.Walking);
+        ChangeState(NPCWalkingState.Walking);
     }
 
-    private void FollowMoon()
-    {
-        ChangeState(VillagerState.FollowMoon);
-
-        Vector3 centerDirection = _planet.transform.position - transform.position;
-        centerDirection.Normalize();
-        transform.rotation = Quaternion.FromToRotation(transform.up, centerDirection) * transform.rotation;
-        transform.Translate(Vector3.forward * _speed * Time.deltaTime);
-    }
-
-    public void ChangeState(VillagerState newState)
+    public void ChangeState(NPCWalkingState newState)
     {
         currentState = newState;
     }
