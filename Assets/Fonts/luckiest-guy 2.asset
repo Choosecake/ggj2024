@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ed9b02cc88f582a4d8c8257f4a093ff5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0a7659d95a0fe9947a8b8f8637ec503d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -56,11 +56,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: luckiest-guy
+  m_Name: luckiest-guy 2
   m_EditorClassIdentifier: 
-  hashCode: 1711405180
+  hashCode: -295566482
   material: {fileID: -6057161384215493054}
-  materialHashCode: -282583972
+  materialHashCode: 171136014
   m_Version: 1.1.0
   m_SourceFontFileGUID: a9f25cee55a86cd43b9ef21cf6e8f699
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: a9f25cee55a86cd43b9ef21cf6e8f699, type: 3}
