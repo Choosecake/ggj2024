@@ -21,7 +21,6 @@ public class ClownWalk : MonoBehaviour
         {
             if (hit.collider.gameObject.CompareTag("Planet"))
             {
-                print("a");
                 direction = hit.collider.gameObject.transform.position;
 
                 Vector3 right = Vector3.Cross(_camera.transform.up, transform.position - _camera.transform.position);

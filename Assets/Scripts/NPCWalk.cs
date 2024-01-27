@@ -10,7 +10,7 @@ public class NPCWalk : MonoBehaviour
     [SerializeField] private GameObject _moonRaycast;
     [SerializeField] private float _speed;
     [SerializeField] private float _turnSpeed;
-    private VillagerState currentState = VillagerState.Walking;
+    public VillagerState currentState = VillagerState.Walking;
 
     public enum VillagerState
     {
@@ -29,7 +29,7 @@ public class NPCWalk : MonoBehaviour
                 Walk();
                 break;
             case VillagerState.StopWalking:
-                // Stop walking
+                StopWalking();
                 break;
             case VillagerState.TurnRight:
                 TurnRight();
@@ -64,6 +64,11 @@ public class NPCWalk : MonoBehaviour
                 ChangeState(VillagerState.TurnBackwards);
             }
         }
+    }
+
+    private void StopWalking()
+    {
+
     }
 
     private void TurnRight()
