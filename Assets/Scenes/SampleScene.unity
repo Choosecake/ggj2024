@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 62789503}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 168372720}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -764,7 +764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planet: {fileID: 1364303476}
-  _moon: {fileID: 0}
+  _moonRaycast: {fileID: 1676361135}
   _speed: 0.5
   _turnSpeed: 100
 --- !u!1 &558425818
@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planet: {fileID: 1364303476}
-  _moon: {fileID: 0}
+  _moonRaycast: {fileID: 1676361135}
   _speed: 0.5
   _turnSpeed: 100
 --- !u!1 &696626115
@@ -1432,7 +1432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planet: {fileID: 1364303476}
-  _moon: {fileID: 0}
+  _moonRaycast: {fileID: 1676361135}
   _speed: 0.5
   _turnSpeed: 100
 --- !u!1 &963194225
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 1130467998}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1883,7 +1883,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364303476}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edadd7fdb82f07c4a9434dc3292fd02f, type: 3}
   m_Name: 
@@ -1903,7 +1903,7 @@ GameObject:
   - component: {fileID: 1532612858}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2129,7 +2129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planet: {fileID: 1364303476}
-  _moon: {fileID: 0}
+  _moonRaycast: {fileID: 1676361135}
   _speed: 0.5
   _turnSpeed: 100
 --- !u!1 &1586911459
@@ -2178,7 +2178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planet: {fileID: 1364303476}
-  _moon: {fileID: 0}
+  _moonRaycast: {fileID: 1676361135}
   _speed: 0.5
   _turnSpeed: 100
 --- !u!1 &1596346470
@@ -2227,7 +2227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planet: {fileID: 1364303476}
-  _moon: {fileID: 0}
+  _moonRaycast: {fileID: 1676361135}
   _speed: 0.5
   _turnSpeed: 100
 --- !u!1 &1607121022
@@ -2244,7 +2244,7 @@ GameObject:
   - component: {fileID: 1607121024}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2327,6 +2327,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607121022}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1676361135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676361136}
+  m_Layer: 0
+  m_Name: MoonRaycast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1676361136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676361135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1697738546}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1697738545
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,6 +2396,7 @@ Transform:
   - {fileID: 47779249}
   - {fileID: 1704051442}
   - {fileID: 558425819}
+  - {fileID: 1676361136}
   m_Father: {fileID: 1978145608}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2482,7 +2514,6 @@ GameObject:
   - component: {fileID: 1704051442}
   - component: {fileID: 1704051445}
   - component: {fileID: 1704051444}
-  - component: {fileID: 1704051443}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -2505,19 +2536,6 @@ Transform:
   m_Father: {fileID: 1697738546}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1704051443
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704051441}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1704051444
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2614,7 +2632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _planet: {fileID: 1364303476}
-  _moon: {fileID: 0}
+  _moonRaycast: {fileID: 1676361135}
   _speed: 0.5
   _turnSpeed: 100
 --- !u!1 &1949251313
@@ -2631,7 +2649,7 @@ GameObject:
   - component: {fileID: 1949251315}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

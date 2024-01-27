@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class NPCWalk : MonoBehaviour
 {
     [SerializeField] private GameObject _planet;
-    [SerializeField] private GameObject _moon;
+    [SerializeField] private GameObject _moonRaycast;
     [SerializeField] private float _speed;
     [SerializeField] private float _turnSpeed;
     private VillagerState currentState = VillagerState.Walking;
@@ -18,16 +19,10 @@ public class NPCWalk : MonoBehaviour
         TurnRight,
         TurnLeft,
         TurnBackwards,
-        FollowMoon
     }
 
     void Update()
     {
-        if (this.CompareTag("VampClown"))
-        {
-            FollowMoon();
-        }
-
         switch (currentState)
         {
             case VillagerState.Walking:
@@ -49,9 +44,9 @@ public class NPCWalk : MonoBehaviour
     }
     private void Walk()
     {
-        Vector3 centerDirection = _planet.transform.position - transform.position;
-        centerDirection.Normalize();
-        transform.rotation = Quaternion.FromToRotation(transform.up, centerDirection) * transform.rotation;
+        Vector3 direction = _planet.transform.position - transform.position;
+        direction.Normalize();
+        transform.rotation = Quaternion.FromToRotation(transform.up, direction) * transform.rotation;
         transform.Translate(Vector3.forward * _speed * Time.deltaTime);
 
         if (Random.Range(0, 1000) == 0)
@@ -87,16 +82,6 @@ public class NPCWalk : MonoBehaviour
     {
         transform.Rotate(Vector3.up, 180f);
         ChangeState(VillagerState.Walking);
-    }
-
-    private void FollowMoon()
-    {
-        ChangeState(VillagerState.FollowMoon);
-
-        Vector3 centerDirection = _planet.transform.position - transform.position;
-        centerDirection.Normalize();
-        transform.rotation = Quaternion.FromToRotation(transform.up, centerDirection) * transform.rotation;
-        transform.Translate(Vector3.forward * _speed * Time.deltaTime);
     }
 
     public void ChangeState(VillagerState newState)
