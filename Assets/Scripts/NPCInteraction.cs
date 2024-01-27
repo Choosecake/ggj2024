@@ -33,6 +33,7 @@ public class NPCInteraction : MonoBehaviour
                     if (npc.action != NPCAction.Frightened)
                     {
                         npc.action = NPCAction.Frightened;
+                        npc.GetComponent<NPCWalk>().currentState = NPCWalk.VillagerState.StopWalking;
                     }
 
                 }
@@ -42,6 +43,7 @@ public class NPCInteraction : MonoBehaviour
                     if (npc.action == NPCAction.Frightened)
                     {
                         npc.action = NPCAction.Laughing;
+                        npc.GetComponent<NPCWalk>().currentState = NPCWalk.VillagerState.StopWalking;
                     }
                 }
             }
