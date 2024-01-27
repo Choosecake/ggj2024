@@ -65,6 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac78bd1a2ee5de4b992bd5d71eec226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _walkCooldown: 25
   type: 1
   action: 0
 --- !u!135 &3931265572504461211

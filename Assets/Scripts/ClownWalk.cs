@@ -6,6 +6,7 @@ public class ClownWalk : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private GameObject _moonRaycast;
+    [SerializeField] private GameObject _groundRaycast;
     [SerializeField] private float _speed;
 
     void Update()
@@ -21,14 +22,7 @@ public class ClownWalk : MonoBehaviour
         {
             if (hit.collider.gameObject.CompareTag("Planet"))
             {
-                direction = hit.collider.gameObject.transform.position;
-
-                Vector3 right = Vector3.Cross(_camera.transform.up, transform.position - _camera.transform.position);
-                Vector3 up = Vector3.Cross(transform.position - _camera.transform.position, right);
-
-                transform.rotation = Quaternion.AngleAxis(-direction.x * _speed, up) * transform.rotation;
-                transform.rotation = Quaternion.AngleAxis(direction.y * _speed, right) * transform.rotation;
-
+                transform.position = Vector3.Lerp(transform.position, hit.point, _speed * Time.deltaTime);
             }
         }
     }

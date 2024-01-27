@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NPCInteraction : MonoBehaviour
 {
+    [SerializeField] private float _walkCooldown;
     public NPCType type;
     public NPCAction action;
 
@@ -33,7 +34,9 @@ public class NPCInteraction : MonoBehaviour
                     if (npc.action != NPCAction.Frightened)
                     {
                         npc.action = NPCAction.Frightened;
-                        npc.GetComponent<NPCWalk>().currentState = NPCWalk.VillagerState.StopWalking;
+                        npc.GetComponent<NPCWalk>().currentState = NPCWalk.NPCWalkingState.StopWalking;
+
+                        StartCoroutine(StartWalking(npc));
                     }
 
                 }
@@ -43,10 +46,22 @@ public class NPCInteraction : MonoBehaviour
                     if (npc.action == NPCAction.Frightened)
                     {
                         npc.action = NPCAction.Laughing;
-                        npc.GetComponent<NPCWalk>().currentState = NPCWalk.VillagerState.StopWalking;
+                        npc.GetComponent<NPCWalk>().currentState = NPCWalk.NPCWalkingState.StopWalking;
+
+                        StartCoroutine(StartWalking(npc));
                     }
                 }
             }
         }
+    }
+
+    private IEnumerator StartWalking(NPCInteraction npc)
+    {
+        if (action == NPCAction.Walking) yield return null;
+
+        yield return new WaitForSeconds(_walkCooldown);
+
+        npc.action = NPCAction.Walking;
+        npc.gameObject.GetComponent<NPCWalk>().ChangeState(NPCWalk.NPCWalkingState.Walking);
     }
 }

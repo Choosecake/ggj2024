@@ -10,9 +10,9 @@ public class NPCWalk : MonoBehaviour
     [SerializeField] private GameObject _moonRaycast;
     [SerializeField] private float _speed;
     [SerializeField] private float _turnSpeed;
-    public VillagerState currentState = VillagerState.Walking;
+    public NPCWalkingState currentState = NPCWalkingState.Walking;
 
-    public enum VillagerState
+    public enum NPCWalkingState
     {
         Walking,
         StopWalking,
@@ -25,19 +25,19 @@ public class NPCWalk : MonoBehaviour
     {
         switch (currentState)
         {
-            case VillagerState.Walking:
+            case NPCWalkingState.Walking:
                 Walk();
                 break;
-            case VillagerState.StopWalking:
+            case NPCWalkingState.StopWalking:
                 StopWalking();
                 break;
-            case VillagerState.TurnRight:
+            case NPCWalkingState.TurnRight:
                 TurnRight();
                 break;
-            case VillagerState.TurnLeft:
+            case NPCWalkingState.TurnLeft:
                 TurnLeft();
                 break;
-            case VillagerState.TurnBackwards:
+            case NPCWalkingState.TurnBackwards:
                 TurnBackwards();
                 break;
         }
@@ -53,15 +53,15 @@ public class NPCWalk : MonoBehaviour
         {
             if (Random.Range(0, 2) == 0)
             {
-                ChangeState(VillagerState.TurnLeft);
+                ChangeState(NPCWalkingState.TurnLeft);
             }
             else if (Random.Range(0, 2) == 1)
             {
-                ChangeState(VillagerState.TurnRight);
+                ChangeState(NPCWalkingState.TurnRight);
             }
             else if (Random.Range(0, 2) == 2)
             {
-                ChangeState(VillagerState.TurnBackwards);
+                ChangeState(NPCWalkingState.TurnBackwards);
             }
         }
     }
@@ -74,22 +74,22 @@ public class NPCWalk : MonoBehaviour
     private void TurnRight()
     {
         transform.Rotate(Vector3.up, _turnSpeed);
-        ChangeState(VillagerState.Walking);
+        ChangeState(NPCWalkingState.Walking);
     }
 
     private void TurnLeft()
     {
         transform.Rotate(Vector3.up, -_turnSpeed);
-        ChangeState(VillagerState.Walking);
+        ChangeState(NPCWalkingState.Walking);
     }
 
     private void TurnBackwards()
     {
         transform.Rotate(Vector3.up, 180f);
-        ChangeState(VillagerState.Walking);
+        ChangeState(NPCWalkingState.Walking);
     }
 
-    public void ChangeState(VillagerState newState)
+    public void ChangeState(NPCWalkingState newState)
     {
         currentState = newState;
     }
