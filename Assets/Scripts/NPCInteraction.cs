@@ -63,7 +63,7 @@ public class NPCInteraction : MonoBehaviour
             {
                 if (this.type == NPCType.Vampire)
                 {
-                    if (npc.action != NPCAction.Frightened)
+                    if (npc.action == NPCAction.Walking)
                     {
                         _displayReaction.SetSprite(1);
                         StartCoroutine(ResetReaction());
@@ -73,7 +73,6 @@ public class NPCInteraction : MonoBehaviour
 
                         StartCoroutine(StartWalking(npc));
                     }
-
                 }
 
                 if (this.type == NPCType.Clown)

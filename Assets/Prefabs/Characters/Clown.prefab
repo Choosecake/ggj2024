@@ -375,7 +375,7 @@ MonoBehaviour:
   _walkingMaterial: {fileID: 2100000, guid: 696cce1c452f4e24fa4d1108a81a8cc8, type: 2}
   _laughingMaterial: {fileID: 2100000, guid: 6ad82f76f70fd4840a21fcf878b9c352, type: 2}
   _frightenedMaterial: {fileID: 2100000, guid: 891ec8ce741da43498bcc2876bec9068, type: 2}
-  _walkCooldown: 10
+  _walkCooldown: 12
   type: 2
   action: 0
 --- !u!114 &7855267957845314413

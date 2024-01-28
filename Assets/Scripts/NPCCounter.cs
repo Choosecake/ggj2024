@@ -1,5 +1,7 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class NPCCounter : MonoBehaviour
 {
@@ -7,39 +9,70 @@ public class NPCCounter : MonoBehaviour
     [SerializeField] private TMP_Text _walkingText;
     [SerializeField] private TMP_Text _laughingText;
     [SerializeField] private TMP_Text _frightenedText;
-    public float walkingCounter;
-    public float laughingCounter;
-    public float frightenedCounter;
+    [SerializeField] private TMP_Text _playerScoreText;
+    [SerializeField] private TMP_Text _vampireScoreText;
+    [SerializeField] private int _playerMultiplier;
+    [SerializeField] private int _vampireMultiplier;
+    private int _playerScore;
+    private int _vampireScore;
+    private int _walkingCounter;
+    private int _laughingCounter;
+    private int _frightenedCounter;
+
+    private void Start()
+    {
+        ResetScore();
+        StartCoroutine(UpdateScore());
+    }
 
     private void Update()
     {
         UpdateCounter();
 
-        _walkingText.text = "x" + walkingCounter.ToString();
-        _laughingText.text = "x" + laughingCounter.ToString();
-        _frightenedText.text = "x" + frightenedCounter.ToString();
+
+        _walkingText.text = "x" + _walkingCounter.ToString();
+        _laughingText.text = "x" + _laughingCounter.ToString();
+        _frightenedText.text = "x" + _frightenedCounter.ToString();
+        _playerScoreText.text = _playerScore.ToString();
+        _vampireScoreText.text = _vampireScore.ToString();
+    }
+
+    private IEnumerator UpdateScore()
+    {
+        yield return new WaitForSeconds(1);
+
+        _playerScore += _laughingCounter * _playerMultiplier;
+        _vampireScore += _frightenedCounter * _vampireMultiplier;
+
+        StartCoroutine(UpdateScore());
     }
 
     private void UpdateCounter()
     {
-        walkingCounter = 0;
-        laughingCounter = 0;
-        frightenedCounter = 0;
+        _walkingCounter = 0;
+        _laughingCounter = 0;
+        _frightenedCounter = 0;
 
         foreach (NPCInteraction npc in NPCs)
         {
             switch (npc.action)
             {
                 case NPCInteraction.NPCAction.Walking:
-                    walkingCounter += 1; 
+                    _walkingCounter += 1; 
                     break;
                 case NPCInteraction.NPCAction.Laughing:
-                    laughingCounter += 1; 
+                    _laughingCounter += 1; 
                     break;
                 case NPCInteraction.NPCAction.Frightened:
-                    frightenedCounter += 1; 
+                    _frightenedCounter += 1; 
                     break;
             }
         }
+    }
+
+    public void ResetScore()
+    {
+        _playerScore = 0;
+        _vampireScore = 0;
     }
 }
