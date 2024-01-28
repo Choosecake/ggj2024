@@ -23,7 +23,7 @@ public class ClownWalk : MonoBehaviour
             {
                 hitPoint = hit.point;
                 transform.position = Vector3.Lerp(transform.position, hit.point, _speed * Time.deltaTime);
-                transform.rotation = Quaternion.FromToRotation(transform.up, hit.collider.gameObject.transform.position - transform.position) * transform.rotation;
+                transform.rotation = Quaternion.FromToRotation(-transform.up, hit.collider.gameObject.transform.position - transform.position) * transform.rotation;
                 //transform.Translate((hit.point - transform.position) * _speed * Time.deltaTime);
             }
         }

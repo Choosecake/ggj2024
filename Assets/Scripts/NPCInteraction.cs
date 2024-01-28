@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class NPCInteraction : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer _bubbleRenderer;
+    [SerializeField] private Material _walkingMaterial;
+    [SerializeField] private Material _laughingMaterial;
+    [SerializeField] private Material _frightenedMaterial;
     [SerializeField] private float _walkCooldown;
     private DisplayReaction _displayReaction;
     public NPCType type;
@@ -32,20 +36,19 @@ public class NPCInteraction : MonoBehaviour
         if (type == NPCType.Normal)
         {
             if (_displayReaction == null) return;
-            SpriteRenderer spriteRenderer = _displayReaction.spriteRenderer;
             if (action == NPCAction.Walking)
             {
-                spriteRenderer.color = Color.black;
+                _bubbleRenderer.color = _walkingMaterial.color;
                 _displayReaction.SetSprite(0);
             }
             else if (action == NPCAction.Laughing)
             {
-                spriteRenderer.color = Color.green;
+                _bubbleRenderer.color = _laughingMaterial.color;
                 _displayReaction.SetSprite(1);
             }
             else if (action == NPCAction.Frightened)
             {
-                spriteRenderer.color = Color.red;
+                _bubbleRenderer.color = _frightenedMaterial.color;
                 _displayReaction.SetSprite(2);
             }
         }

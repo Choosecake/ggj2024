@@ -42,7 +42,7 @@ public class NPCWalk : MonoBehaviour
     {
         Vector3 direction = _planet.transform.position - transform.position;
         direction.Normalize();
-        transform.rotation = Quaternion.FromToRotation(transform.up, direction) * transform.rotation;
+        transform.rotation = Quaternion.FromToRotation(-transform.up, direction) * transform.rotation;
         transform.Translate(Vector3.forward * _speed * Time.deltaTime);
 
         if (Random.Range(0, 1000) == 0)
@@ -64,7 +64,9 @@ public class NPCWalk : MonoBehaviour
 
     private void StopWalking()
     {
-
+        Vector3 direction = _planet.transform.position - transform.position;
+        direction.Normalize();
+        transform.rotation = Quaternion.FromToRotation(-transform.up, direction) * transform.rotation;
     }
 
     private void TurnRight()
