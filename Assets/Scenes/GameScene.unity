@@ -326,7 +326,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 50
+  field of view: 35
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -393,7 +393,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 776784083100114435, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - target: {fileID: 1739595890060123398, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
@@ -449,11 +449,31 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 4238527716696691277, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 4768002111961037457, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 4768002112085013342, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 5309970864298860445, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
     - target: {fileID: 7598372222677910963, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
-    - target: {fileID: 8352831645793972211, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - target: {fileID: 8836837055700758351, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 8836837057369401009, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
