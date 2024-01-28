@@ -326,7 +326,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 35
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -393,7 +393,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1739595890060123398, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - target: {fileID: 234946372780932373, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 234946373392282859, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 1118221290574483039, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 1341877326708314948, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 1559392135044302884, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 1835880794164531009, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
@@ -445,6 +465,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet
       objectReference: {fileID: 0}
+    - target: {fileID: 3042315808210002150, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 3481489626687327687, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 963194225}
     - target: {fileID: 3636352399591841240, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _camera
       value: 
@@ -453,27 +481,27 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
-    - target: {fileID: 4768002111961037457, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - target: {fileID: 4525436821084669432, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
-    - target: {fileID: 4768002112085013342, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - target: {fileID: 7727830178196117448, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
-    - target: {fileID: 5309970864298860445, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - target: {fileID: 8086049912087203518, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
-    - target: {fileID: 7598372222677910963, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - target: {fileID: 8086049912499013489, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
-    - target: {fileID: 8836837055700758351, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - target: {fileID: 8648332028932069381, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
-    - target: {fileID: 8836837057369401009, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - target: {fileID: 8816566964376298924, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
