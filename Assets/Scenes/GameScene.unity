@@ -409,6 +409,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2221328023141638495, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
   m_PrefabInstance: {fileID: 2221328022347972395}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1502350014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7785759701915789534, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+  m_PrefabInstance: {fileID: 2221328022347972395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1502350019
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502350014}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1978145606 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2221328022525699181, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
@@ -421,6 +442,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 33763971189940513, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 136675793206353443, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 152358613092492454, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 206201190215278530, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 234946372780932373, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
@@ -429,22 +466,154 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 250997252194385101, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 255199180814865978, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 289696129642681410, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 358597118200305768, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 430956166078552041, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 593385169702266088, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 602971179828591247, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 607714903987405178, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 621648113803142210, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 625455946148650001, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 696988528728194046, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 809067976893483213, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 847316092387494237, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 901057599322174242, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 922456873225034139, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090028531182362719, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 1118221290574483039, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 1224802078694776577, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1302340465707144054, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315828844376321153, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338546342374882545, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 1341877326708314948, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 1355086733339203086, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1436565643723328581, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471751090481676121, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477581745671491087, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555917908049384770, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 1559392135044302884, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 1562778417757005900, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617140727951492754, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658037580812429973, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758371620901130226, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 1835880794164531009, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 2001830618398743411, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044484478379681826, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055361555802225432, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182385334681796488, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 2221328023141638483, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -493,30 +662,390 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet
       objectReference: {fileID: 0}
+    - target: {fileID: 2221328023141638495, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2408692053491585850, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434868728334407605, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435648544068732478, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558588315231788179, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2560143525283070972, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600186728473697539, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2637740915016447847, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645300497751258449, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660725331606890097, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794620382789508151, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3026665140288988456, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 3042315808210002150, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 3053712618569713090, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056937852402755659, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077161648581762835, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3151065731798140084, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3161820484994365274, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3181442448546432191, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3195555048016950732, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3196684218701801643, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3344269941955024241, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347303857287982735, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 3481489626687327687, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 3486712972424908764, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537543710511279164, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542717421299234851, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3600843873364933183, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 3636352399591841240, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 3658255548833260646, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699617861176096673, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797286074172323393, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003934400766069978, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077958815603571646, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085305280237748741, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 4238527716696691277, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 4287239512933727450, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312813950662587097, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316670451986833509, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346000159533103672, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385382208481388472, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4447288542822514437, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4447781382114638455, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454935838995067962, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456055593332596805, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4460456878623563038, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496198815604168527, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 4525436821084669432, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 4529664685907240463, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4646743123287593757, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713714547535169792, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767450187109812481, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809159793483183402, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850643293293303241, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873956446615452915, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903616983684509864, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5013000446830240081, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029729663327582562, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5289224519701665771, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367491641632435060, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430308920301664391, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520795723355000687, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525424465870334135, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639278461485872382, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5721198844562134991, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804864515456600549, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835332276194452296, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6016687362768902796, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076501100989898492, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098035237856836401, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6133875433816518427, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6181473239177435358, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6183186248063517934, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283679989982465991, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340910034172153546, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424836561453808387, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498665991693941590, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514255804534403202, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6664632368655675774, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690837699723231248, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6713430131745566435, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6733857442618646888, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939996191152295820, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7138717798733466042, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272765555583641026, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494129151091541878, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516775859496516491, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535167787920995362, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655431808499147222, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7705588663458312234, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 7727830178196117448, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 7742894628656384348, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7785759701915789534, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836327073786134626, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917970799674108356, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032470618255485983, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 8086049912087203518, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
@@ -525,13 +1054,111 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 8139689154071457240, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223688544687531018, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286342319064093186, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8305441523831152108, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322310358628922296, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391427414114127274, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409459299150884423, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8430038550090897895, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457550176155219452, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488683491598150989, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545624415784743307, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612010098074446759, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8620154613899612935, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638371739375989645, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 8648332028932069381, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 8695242489327909171, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750909568471048454, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765195934116873881, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
     - target: {fileID: 8816566964376298924, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _target
       value: 
       objectReference: {fileID: 963194225}
-    m_RemovedComponents: []
+    - target: {fileID: 8857429980879371952, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934060794588953512, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980139052043751156, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020208632882498575, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030506706869533484, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085241789553565533, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107700798148642245, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: m_TagString
+      value: Planet
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2221328023141638487, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+    - {fileID: 2221328023141638494, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
