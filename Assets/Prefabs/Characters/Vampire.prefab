@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1855260934951039044}
   - component: {fileID: 3931265572504461211}
   - component: {fileID: 1035708183682632443}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Vampire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 5553862681908863330}
   - component: {fileID: 5553862681908863335}
   - component: {fileID: 5553862681908863328}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

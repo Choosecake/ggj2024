@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8706259845027285249}
   - component: {fileID: 1982902485936475590}
   - component: {fileID: 1202596236983332941}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3206180720549222439}
   - component: {fileID: 3206180720549222434}
   - component: {fileID: 3206180720549222437}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
