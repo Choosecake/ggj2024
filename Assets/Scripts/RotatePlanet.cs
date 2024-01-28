@@ -53,7 +53,7 @@ public class RotatePlanet : MonoBehaviour
     {
         _mouseMovement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.Joystick1Button0))
         {
             _currentObject = _moon;
             _zoom.ZoomIn();
