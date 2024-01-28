@@ -7,6 +7,7 @@ public class NPCInteraction : MonoBehaviour
     [SerializeField] private float _walkCooldown;
     public NPCType type;
     public NPCAction action;
+    private 
 
     public enum NPCType
     {
@@ -20,6 +21,22 @@ public class NPCInteraction : MonoBehaviour
         Walking,
         Laughing,
         Frightened
+    }
+
+    private void Update()
+    {
+        if (action == NPCAction.Walking)
+        {
+            // set walking sprite
+        }
+        else if (action == NPCAction.Laughing)
+        {
+            // set laughing sprite
+        }
+        else if (action == NPCAction.Frightened)
+        {
+            // set frightened sprite
+        }
     }
 
     private void OnTriggerEnter(Collider other)
