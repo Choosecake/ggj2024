@@ -9,10 +9,12 @@ public class RotatePlanet : MonoBehaviour
     [HideInInspector] public bool isDragging;
     private Vector2 _mouseMovement;
     private GameObject _currentObject;
+    private CameraZoom _zoom;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        _zoom = _camera.gameObject.GetComponent<CameraZoom>();
     }
 
     void Update()
@@ -52,10 +54,12 @@ public class RotatePlanet : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             _currentObject = _moon;
+            _zoom.ZoomIn();
         }
         else
         {
             _currentObject = _planet;
+            _zoom.ZoomOut();
         }
 
         Vector3 right = Vector3.Cross(_camera.transform.up, _currentObject.transform.position - _camera.transform.position);
