@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RotatePlanet : MonoBehaviour
@@ -10,13 +8,21 @@ public class RotatePlanet : MonoBehaviour
     [SerializeField] private float _sensitivity;
     [HideInInspector] public bool isDragging;
     private Vector2 _mouseMovement;
-    private Vector2 _lastMousePosition;
     private GameObject _currentObject;
+    private CameraZoom _zoom;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        _zoom = _camera.gameObject.GetComponent<CameraZoom>();
+    }
 
     void Update()
     {
+/*
         DetectPlanet();
         if (!isDragging) return;
+*/
         MakeRotation();
     }
 
@@ -43,24 +49,24 @@ public class RotatePlanet : MonoBehaviour
 
     private void MakeRotation()
     {
-        _mouseMovement = new Vector2(Input.mousePosition.x - _lastMousePosition.x, Input.mousePosition.y - _lastMousePosition.y);
+        _mouseMovement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
         if (Input.GetMouseButton(0))
         {
-            if (_mouseMovement != Vector2.zero)
-            {
-                Vector3 right = Vector3.Cross(_camera.transform.up, _currentObject.transform.position - _camera.transform.position);
-                Vector3 up = Vector3.Cross(_currentObject.transform.position - _camera.transform.position, right);
-                _currentObject.transform.rotation = Quaternion.AngleAxis(-_mouseMovement.x * _sensitivity, up) * _currentObject.transform.rotation;
-                _currentObject.transform.rotation = Quaternion.AngleAxis(_mouseMovement.y * _sensitivity, right) * _currentObject.transform.rotation;
-            }
+            _currentObject = _moon;
+            _zoom.ZoomIn();
+            _planet.GetComponent<Rotate>().enabled = false;
         }
         else
         {
-            isDragging = false;
+            _currentObject = _planet;
+            _zoom.ZoomOut();
+            _planet.GetComponent<Rotate>().enabled = true;
         }
 
-        _lastMousePosition = Input.mousePosition;
-
+        Vector3 right = Vector3.Cross(_camera.transform.up, _currentObject.transform.position - _camera.transform.position);
+        Vector3 up = Vector3.Cross(_currentObject.transform.position - _camera.transform.position, right);
+        _currentObject.transform.rotation = Quaternion.AngleAxis(-_mouseMovement.x * _sensitivity, up) * _currentObject.transform.rotation;
+        _currentObject.transform.rotation = Quaternion.AngleAxis(_mouseMovement.y * _sensitivity, right) * _currentObject.transform.rotation;
     }
 }
