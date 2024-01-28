@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -41,7 +38,7 @@ public class GameOverManager : MonoBehaviour
                 print(FindObjectOfType<NPCCounter>().gameObject.transform.GetChild(2).GetComponent<Image>().sprite);
 
             }
-            else if (_vampireScore > _playerScore)
+            else if (_vampireScore >= _playerScore)
             {
                 FindObjectOfType<NPCCounter>().gameObject.transform.GetChild(2).GetComponent<Image>().sprite = _gameOverSprite._loseSprite;
             }
@@ -51,6 +48,12 @@ public class GameOverManager : MonoBehaviour
 
             _playerScoreText.text = _playerScore.ToString();
             _vampireScoreText.text = _vampireScore.ToString();
+
+            if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.Joystick1Button0))
+            {
+                SceneManager.LoadScene(0);
+            }
+
         }
     }
 }
