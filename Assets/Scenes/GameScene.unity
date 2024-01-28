@@ -468,8 +468,17 @@ PrefabInstance:
       value: Planet
       objectReference: {fileID: 0}
     - target: {fileID: 3636352399591841240, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _speed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3636352399591841240, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
       propertyPath: _camera
       value: 
       objectReference: {fileID: 963194227}
-    m_RemovedComponents: []
+    - target: {fileID: 8769058668995890232, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
+      propertyPath: _speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8769058668995890232, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 92fbba116ad330d4ea13ac6363c330cc, type: 3}

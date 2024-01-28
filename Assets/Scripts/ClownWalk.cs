@@ -23,6 +23,7 @@ public class ClownWalk : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("Planet"))
             {
                 transform.position = Vector3.Lerp(transform.position, hit.point, _speed * Time.deltaTime);
+                //transform.Translate((hit.point - transform.position) * _speed * Time.deltaTime);
             }
         }
     }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2221328023141638494}
   - component: {fileID: 2221328023141638487}
   - component: {fileID: 1364303481}
+  - component: {fileID: 52173403586636222}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Planet
@@ -82,6 +83,20 @@ Rigidbody:
   m_Constraints: 14
   m_CollisionDetection: 0
 --- !u!64 &1364303481
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2221328023141638495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7630892198992904530, guid: f1609c6f35c93894cae054bb20b31683, type: 3}
+--- !u!64 &52173403586636222
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -872,7 +887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7025905891343138968, guid: efed02e11ff4a2a41a9bca82d173b0ef, type: 3}
       propertyPath: _speed
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7025905891343138968, guid: efed02e11ff4a2a41a9bca82d173b0ef, type: 3}
       propertyPath: _camera
@@ -882,7 +897,8 @@ PrefabInstance:
       propertyPath: _moonRaycast
       value: 
       objectReference: {fileID: 2221328022894592644}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3046147991205695864, guid: efed02e11ff4a2a41a9bca82d173b0ef, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: efed02e11ff4a2a41a9bca82d173b0ef, type: 3}
 --- !u!4 &8769058668995890233 stripped
 Transform:
