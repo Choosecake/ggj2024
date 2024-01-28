@@ -7,7 +7,6 @@ public class NPCInteraction : MonoBehaviour
     [SerializeField] private float _walkCooldown;
     public NPCType type;
     public NPCAction action;
-    private 
 
     public enum NPCType
     {
