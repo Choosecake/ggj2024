@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraZoom : MonoBehaviour
 {
@@ -16,16 +17,19 @@ public class CameraZoom : MonoBehaviour
     void Start()
     {
         _camera = GetComponent<Camera>();
+        if (SceneManager.GetActiveScene().name != "GameScene") return;
         _clown = _clownWalk.gameObject.transform.position;
         _originalTransform = transform;
     }
 
     public void ZoomIn()
     {
+        if (SceneManager.GetActiveScene().name != "GameScene") return;
         _camera.fieldOfView = Mathf.Lerp(_camera.fieldOfView, _zoomFOV, _speed * Time.deltaTime);
     }
     public void ZoomOut()
     {
+        if (SceneManager.GetActiveScene().name != "GameScene") return;
         _camera.fieldOfView = Mathf.Lerp(_camera.fieldOfView, _regularFOV, _speed * 2 * Time.deltaTime);
     }
 }

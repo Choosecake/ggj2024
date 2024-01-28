@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RotatePlanet : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class RotatePlanet : MonoBehaviour
 
     void Update()
     {
+        if (SceneManager.GetActiveScene().name != "GameScene") return;
 /*
         DetectPlanet();
         if (!isDragging) return;

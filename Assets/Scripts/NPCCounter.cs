@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class NPCCounter : MonoBehaviour
@@ -9,12 +10,12 @@ public class NPCCounter : MonoBehaviour
     [SerializeField] private TMP_Text _walkingText;
     [SerializeField] private TMP_Text _laughingText;
     [SerializeField] private TMP_Text _frightenedText;
-    [SerializeField] private TMP_Text _playerScoreText;
-    [SerializeField] private TMP_Text _vampireScoreText;
     [SerializeField] private int _playerMultiplier;
     [SerializeField] private int _vampireMultiplier;
-    private int _playerScore;
-    private int _vampireScore;
+    public TMP_Text _playerScoreText;
+    public TMP_Text _vampireScoreText;
+    public int _playerScore;
+    public int _vampireScore;
     private int _walkingCounter;
     private int _laughingCounter;
     private int _frightenedCounter;
@@ -27,8 +28,9 @@ public class NPCCounter : MonoBehaviour
 
     private void Update()
     {
-        UpdateCounter();
+        if (SceneManager.GetActiveScene().name != "GameScene") return;
 
+        UpdateCounter();
 
         _walkingText.text = "x" + _walkingCounter.ToString();
         _laughingText.text = "x" + _laughingCounter.ToString();
