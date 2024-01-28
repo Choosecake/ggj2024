@@ -55,11 +55,13 @@ public class RotatePlanet : MonoBehaviour
         {
             _currentObject = _moon;
             _zoom.ZoomIn();
+            _planet.GetComponent<Rotate>().enabled = false;
         }
         else
         {
             _currentObject = _planet;
             _zoom.ZoomOut();
+            _planet.GetComponent<Rotate>().enabled = true;
         }
 
         Vector3 right = Vector3.Cross(_camera.transform.up, _currentObject.transform.position - _camera.transform.position);
